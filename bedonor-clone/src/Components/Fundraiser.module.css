@@ -1,0 +1,140 @@
+.pgDiv {
+  background-color: white;
+}
+.coverDiv {
+  height: 265px;
+  background-image: url("https://sytb5eeu.cdn.imgeng.in/img/fundraisers.jpg");
+}
+.infoDiv {
+  display: flex;
+  justify-content: space-evenly;
+  height: 180px;
+  align-items: center;
+}
+.infoDiv > div {
+  height: 50%;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 2px solid rgb(226, 226, 10);
+  border-right: 2px solid rgb(226, 226, 10);
+}
+.mainDiv {
+  display: flex;
+  margin: 15px 0px;
+}
+.categDiv {
+  width: 12%;
+}
+.casesDiv {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.casesDiv > div {
+  width: 33%;
+  border: 1px solid rgb(228, 219, 219);
+  margin: 29px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 3px;
+}
+.casesDiv img {
+  width: 100%;
+  height: 190px;
+}
+.casesDiv > div > div {
+  display: flex;
+  justify-content: space-between;
+}
+.casesDiv > div > div > p {
+  margin: 0px 15px;
+}
+.caseHeading {
+  font-size: 17px;
+  height: 39px;
+  padding: 5px;
+}
+.caseBy {
+  color: rgb(110, 139, 195);
+}
+.caseRaised {
+  color: rgb(41, 86, 177);
+  font-size: 17px;
+}
+.caseSupporters {
+  font-size: 18px;
+}
+.caseBtn {
+  width: 95%;
+  height: 50px;
+  margin: 2.5%;
+  background-color: rgb(255, 204, 83);
+  cursor: pointer;
+  border: 0px;
+  font-size: 15px;
+}
+.caseBtn:hover {
+  background-color: rgb(241, 172, 11);
+}
+.caseMainDiv {
+  box-shadow: 7px 7px 7px #aaaaaa;
+  padding: 1px;
+}
+.casesDiv p {
+  margin: 8px;
+}
+.caseNeeded {
+  text-align: center;
+  margin-left: 15px !important;
+}
+.pages {
+  margin: 15px auto;
+  width: 450px;
+  display: flex;
+}
+.pages button {
+  width: 118px;
+  height: 34px;
+  background-color: rgb(243, 240, 237);
+  cursor: pointer;
+  margin: 15px auto;
+  border: 0px;
+  border-radius: 3px;
+}
+.pages button:hover {
+  background-color: rgb(75, 71, 71);
+  color: white;
+  font-size: 14px;
+}
+.caseRaised,
+.caseNeeded {
+  display: flex;
+  align-items: center;
+}
+.rupeeIcn {
+  margin: 0px;
+  size: 24px;
+}
+.caseRaised {
+  justify-content: center !important;
+  height: 19px;
+  font-size: 15px;
+  width: 45%;
+  border: 0px solid red;
+}
+.raisedText {
+  margin: 0px;
+  padding: 0px;
+}
+.raiseDiv {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+.rupeesIcn {
+  margin: 0px !important;
+  padding: 0px !important;
+}

@@ -1,0 +1,163 @@
+.bigger {
+  width: 100%;
+  background-image: url("https://sytb5eeu.cdn.imgeng.in/img/footer-bg.jpg");
+  font-size: 15px !important;
+  margin: 0px !important;
+}
+
+.footer {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+  /* border: 1px solid red; */
+  margin: 0px auto !important;
+  color: white;
+}
+
+.card1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  /* border: 1px solid black; */
+  padding: 37px 0;
+  color: white;
+}
+
+/* .card1 > div:nth-child(1){
+    padding
+} */
+
+.card1 a {
+  display: block;
+  padding-bottom: 13px;
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+}
+.card1 a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  width: 75%;
+  height: 2px;
+  margin: 24px 0 39px;
+  background-color: rgb(228, 187, 94);
+}
+
+.arrow {
+  color: rgb(255, 195, 1);
+  margin-right: 8px;
+}
+
+.hd1 {
+  padding-bottom: 25px;
+  font-weight: 500;
+  color: white;
+}
+.card {
+  width: 100%;
+  padding-left: 10px;
+  /* height: 200px; */
+  color: white;
+}
+
+.imgeDiv {
+  width: 300px;
+  height: 190px;
+  margin: 85px auto;
+  background: transparent !important;
+}
+.imgeDiv img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.follow {
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+}
+.follow hr {
+  width: 30%;
+  height: 2px;
+  margin-left: 25px;
+  /* margin: 24px 0 39px; */
+  background-color: rgb(228, 187, 94);
+}
+
+.icons {
+  width: 100%;
+  display: flex;
+  /* margin-top: 30px; */
+}
+
+.icons div {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  padding: 6px;
+  background-color: rgb(245, 199, 87);
+  /* border: 1px solid blue; */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.icons div:hover {
+  background-color: white;
+}
+
+.icons > div > img {
+  width: 100%;
+  height: 100%;
+}
+
+.text {
+  width: 100%;
+  /* border: 1px solid black; */
+  margin-top: 30px;
+}
+
+.text p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.8rem;
+}
+
+.finalDiv {
+  width: 100%;
+  margin-top: 33px;
+}
+
+.inp {
+  width: 250px;
+  padding: 9px;
+  font-size: 18px;
+  color: black;
+  border: none;
+  outline: none;
+}
+.bns {
+  padding: 8.5px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: rgb(255, 195, 1);
+  cursor: pointer;
+  background: linear-gradient(to right, blue 50%, rgb(255, 195, 1) 50%);
+  background-size: 200%;
+  transition: all 0.5s ease-out;
+  background-position: right bottom;
+  border: none;
+}
+
+.bns:hover {
+  background-position: left bottom;
+}
+.card1 > div:nth-child(2) {
+  margin-top: 99px;
+}

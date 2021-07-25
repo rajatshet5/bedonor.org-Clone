@@ -1,0 +1,141 @@
+* {
+  font-family: "varela round";
+}
+body {
+  background-color: rgb(243, 243, 243);
+}
+.bannerDiv {
+  background-image: url("https://sytb5eeu.cdn.imgeng.in/banner.png");
+  height: 550px;
+  position: relative;
+}
+.image {
+  position: absolute;
+  top: 55%;
+  right: 30%;
+}
+.bannerSubs > div {
+  display: flex;
+}
+.bannerSubs > div > p {
+  display: flex;
+  margin: 0px 15px;
+  justify-content: space-evenly;
+  font-size: 23px;
+  border-right: 2px solid rgb(255, 204, 83);
+  border-left: 2px solid rgb(255, 204, 83);
+  text-align: center;
+}
+.bannerSubs {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 10%;
+  left: 45%;
+  color: rgb(19, 37, 115);
+  font-size: 21px;
+}
+.whyUsDiv {
+  background-image: url("https://sytb5eeu.cdn.imgeng.in/img/why-bg.jpg");
+  height: 610px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.whyUsDiv > img {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  width: 90%;
+}
+.ways {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  position: relative;
+  height: 600px;
+}
+.ways h3,
+.ways p {
+  text-align: left;
+}
+.ways > div {
+  margin-left: 155px;
+  width: 50%;
+  margin-bottom: 90px;
+}
+.ways h3 {
+  font-size: 25px;
+  color: rgb(20, 37, 115);
+}
+.ways p {
+  line-height: 31px;
+}
+.stepsDiv {
+  margin: 80px 0px;
+}
+.stepsDiv h1 {
+  text-align: center;
+  font-size: 38px;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 93px;
+}
+.whyUsDiv > div {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 10%;
+  text-align: center;
+}
+.whySubDiv1 {
+  top: 13%;
+  left: 15%;
+}
+.whySubDiv2 {
+  top: 13%;
+  left: 45%;
+}
+.whySubDiv3 {
+  top: 13%;
+  left: 75%;
+}
+.whySubDiv4 {
+  top: 60%;
+  left: 15%;
+}
+.whySubDiv5 {
+  top: 60%;
+  left: 45%;
+}
+.whySubDiv6 {
+  top: 60%;
+  left: 75%;
+}
+.whyUsDiv h1 {
+  color: white;
+  font-size: 27px;
+  z-index: 10;
+  margin: 0px 500px;
+  text-align: center;
+}
+.waysImg1,
+.waysImg2,
+.waysImg3 {
+  position: absolute;
+}
+.waysImg1 {
+  top: 3%;
+}
+.waysImg2 {
+  top: 43%;
+}
+.waysImg3 {
+  top: 85%;
+}
+.vid {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+}

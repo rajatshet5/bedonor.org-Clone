@@ -1,0 +1,95 @@
+.modalDonate {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 7; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modalContentDonate {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 32%;
+  height: 450px;
+  position: absolute;
+  top: 3%;
+  right: 30%;
+  text-align: center;
+  font-size: 17px;
+}
+
+/* The Close Button */
+.closeDonate {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeDonate:hover,
+.closeDonate:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modalContentDonate input {
+  width: 90%;
+  height: 30px;
+  font-size: 19px;
+  margin: 15px;
+}
+.modalContentDonate button {
+  height: 30px;
+  width: 90px;
+  border-radius: 23px;
+  border: 0px;
+  margin: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+.btns input {
+  width: 50%;
+  height: 30px;
+}
+.payBtn {
+  width: 180px !important;
+  height: 40px !important;
+  border-radius: 5px !important;
+  margin: 15px 25% !important;
+  color: rgb(19, 37, 115) !important;
+  font-weight: 700 !important;
+  font-size: 18px;
+  background-color: white;
+  box-shadow: 0px 3px 3px rgb(19, 37, 115);
+  border: 1px solid rgb(19, 37, 115) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btns button {
+  background-color: white;
+  box-shadow: 0px 3px 1px rgb(19, 37, 115);
+  border: 1px solid rgb(19, 37, 115) !important;
+}
+.verified {
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+}
+.rupeeIcn {
+  margin: 0px;
+  margin-left: 3px;
+  margin-top: 1px;
+  size: 21px;
+}
+.lockIcn {
+  margin: 0px;
+}

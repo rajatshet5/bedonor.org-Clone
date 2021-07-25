@@ -1,0 +1,36 @@
+.categoriesDiv {
+  display: flex;
+  flex-direction: column;
+  height: 430px;
+  margin: 5px 0px;
+  text-align: center;
+  background-color: white;
+}
+.categoriesDiv > div {
+  display: flex;
+  justify-content: space-evenly;
+}
+.categoriesDiv > div > div {
+  width: 20%;
+  border: 1px solid rgb(255, 195, 1);
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+}
+.categoriesDiv > div > div:hover {
+  cursor: pointer;
+  background-color: rgb(255, 195, 1);
+}
+.arrow {
+  width: 50px;
+  position: absolute;
+  bottom: -12%;
+  right: 40%;
+}
+.sign {
+  width: 180px;
+  height: 130px;
+}
+.categoriesDiv h1 {
+  margin: 50px 0px;
+}
