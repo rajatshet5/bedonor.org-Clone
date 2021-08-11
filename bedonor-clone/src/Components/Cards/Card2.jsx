@@ -10,10 +10,9 @@ export function Card2() {
 
         { width: 1200, itemsToShow: 3 }
     ]
-    // console.log(data1);
     return (
         <div>
-            <h1 className={styles.successStories} style={{color:'black', margin:'auto'}}>Success Stories</h1>
+            <h1 className={styles.successStories}>Success Stories</h1>
         <Carousel className={styles.main2} breakPoints={breakPoints2}>
             <div className={styles.card2}>
                 <div className={styles.imgeDiv}><img src="https://sytb5eeu.cdn.imgeng.in/img/s1.png" alt="ImagesData" /></div>

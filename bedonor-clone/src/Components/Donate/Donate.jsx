@@ -22,7 +22,6 @@ export function Donate({ caseData, showDonate, handleClose }) {
         setAmount(value);
     }
     const handlePay = () => {
-        console.log(caseData);
         const { raised } = caseData;
         const newRaisedAmount = Number(raised) + Number(amount);
         caseData.raised = newRaisedAmount;
@@ -30,7 +29,6 @@ export function Donate({ caseData, showDonate, handleClose }) {
         const newDonorData = { ...donorData };
         newDonorData.value = amount;
         caseData.donors = [...caseData.donors, newDonorData];
-        console.log(caseData);
 
         const config = {
             method: "patch",
@@ -53,13 +51,12 @@ export function Donate({ caseData, showDonate, handleClose }) {
     const handleDonors = (e) => {
         const { name, value } = e.target;
         setDonorData({ ...donorData, [name]: value});
-        console.log(donorData);
+        //console.log(donorData);
     }
     return <div>
-    <div id="myModalDonate" class={styles.modalDonate} style={showDonate ? { display: "block" } : { display: "none" }}>
-
-            <div class={styles.modalContentDonate}>
-                <span onClick={() => handleClose()} class={styles.closeDonate}>&times;</span>
+    <div id="myModalDonate" className={styles.modalDonate} style={showDonate ? { display: "block" } : { display: "none" }}>
+            <div className={styles.modalContentDonate}>
+                <span onClick={() => handleClose()} className={styles.closeDonate}>&times;</span>
                 <div>
                     <h3>Make a Donation</h3>
                     <div className={styles.btns}>

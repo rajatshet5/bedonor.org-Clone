@@ -1,6 +1,6 @@
-import { Card2 } from './Card2';
-import { Card } from './Card';
-import styles from './Card.module.css';
+import { Card2 } from '../Cards/Card2';
+import { Card } from '../Cards/Card';
+import styles from '../Cards/Card.module.css';
 
 export function Sub() {
     const data = [
@@ -18,7 +18,7 @@ export function Sub() {
         <div className={styles.whatsappDiv}>
             <p>Have any questions for us? Chat with our team on WhatsApp Now</p>
             <div>
-                <img src="https://sytb5eeu.cdn.imgeng.in/img/whastapp-icon.png"/>Chat Now 09821021005
+                <img src="https://sytb5eeu.cdn.imgeng.in/img/whastapp-icon.png" alt="subImg"/>Chat Now 09821021005
             </div>
 
         </div>

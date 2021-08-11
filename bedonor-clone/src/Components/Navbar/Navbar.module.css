@@ -113,3 +113,9 @@
   background-position: left bottom;
   color: white !important;
 }
+.imgCu {
+  cursor: pointer;
+}
+.tdNone {
+  text-decoration: none;
+}

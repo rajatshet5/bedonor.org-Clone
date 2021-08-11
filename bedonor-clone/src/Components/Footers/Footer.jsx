@@ -1,5 +1,4 @@
 import styles from './Footer.module.css';
-import { Link } from "react-router-dom";
 import { Footer1 } from './Footer1';
 
 export function Footer() {
@@ -16,7 +15,7 @@ export function Footer() {
             </div>
             <p>BeDonor Online Ventures (P) Ltd</p>
             <div>
-                <img src="https://sytb5eeu.cdn.imgeng.in/img/payment-strip.png" />
+                <img src="https://sytb5eeu.cdn.imgeng.in/img/payment-strip.png" alt="Payment" />
             </div>
         </div>
     </div>

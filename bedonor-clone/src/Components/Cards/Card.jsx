@@ -14,8 +14,8 @@ export function Card({ Link }) {
         <div>
             <h1 className={styles.successStories}>Featured In</h1>
         <Carousel className={styles.main} breakPoints={breakPoints}>
-            {Link.map(el =>
-                <div className={styles.card}><img src={el} alt="ImageCr" /></div>
+            {Link.map((el, i) =>
+                <div key={i} className={styles.card}><img src={el} alt="ImageCr" /></div>
             )}
             </Carousel>
             </div>

@@ -1,15 +1,15 @@
 import { useEffect, useState } from 'react';
 import styles from './Fundraiser.module.css';
 import axios from 'axios';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { BiRupee } from 'react-icons/bi';
 
 
-export function Fundraiser({ load, changeLoad, init }) {
+export function Fundraiser({ load }) {
     const [allData, setAllData] = useState([]);
-    const [updated, setUpdated] = useState(false);
+    //const [updated, setUpdated] = useState(false);
     const [page, setPage] = useState(1);
-    console.log(allData);
+    //console.log(allData);
 
     const getData = () => {
         axios.get(`http://localhost:3001/data?_page=${page}&_limit=4`)
@@ -51,12 +51,12 @@ export function Fundraiser({ load, changeLoad, init }) {
             <div style={{flexDirection:'column', margin: '3px', width:'19%'}} className={styles.pages}>
                 <h5 style={{margin:'8px 60px'}}>Page: {page}</h5>
                 <button disabled={page===1} onClick={() => setPage(page - 1)}>Previous Page</button>
-                <button onClick={() => setPage(page + 1)}>Next Page</button>
+                <button disabled={page===3} onClick={() => setPage(page + 1)}>Next Page</button>
             </div>
             <div className={styles.casesDiv}>
                 {allData.map((item) => {
                     return <div className={styles.caseMainDiv} key={item.id}>
-                        <img src={item.img} />
+                        <img src={item.img} alt="img" />
                         {item.heading !== undefined ? <p className={styles.caseHeading}>{item.heading.length > 60 ? item.heading.substr(0, 61) + "..." : item.heading}</p> : null}
                         <div className={styles.raiseDiv}>
                             <p className={styles.caseBy}>By {item.campaigner}</p>
@@ -80,7 +80,7 @@ export function Fundraiser({ load, changeLoad, init }) {
         <div className={styles.pages}>
             <h4>Page: {page}</h4>
             <button disabled={page===1} onClick={() => setPage(page - 1)}>Previous Page</button>
-            <button onClick={() => setPage(page + 1)}>Next Page</button>
+            <button disabled={page===3} onClick={() => setPage(page + 1)}>Next Page</button>
         </div>
         
     </div>

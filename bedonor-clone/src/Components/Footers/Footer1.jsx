@@ -8,12 +8,9 @@ import {
 
 export function Footer1() {
     return (
-
         <div className={styles.bigger}>
             <div className={styles.footer}>
                 <div className={styles.card1}>
-
-
                     <div>
                         <h1 className={styles.hd1}>Useful Links </h1>
                         <a href="/"><FaAngleDoubleRight className={styles.arrow}
@@ -78,7 +75,6 @@ export function Footer1() {
                         <div>
                             <img src="http://assets.stickpng.com/images/5ecec78673e4440004f09e77.png" alt="insta" />
                         </div>
-
                     </div>
                     <div className={styles.text}>
                         <p>

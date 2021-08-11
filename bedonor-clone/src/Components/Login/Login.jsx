@@ -1,8 +1,8 @@
 import axios from 'axios';
-import {useState, useRef, useEffect} from 'react';
+import {useState, useEffect} from 'react';
 import styles from './Login.module.css';
 
-export function Login({load, changeLoad, LIU_data, show, handleClose, LIU, setLIU }) {
+export function Login({show, handleClose, LIU, setLIU }) {
     const initState = {
         firstName: "",
         lastName: "",
@@ -27,17 +27,17 @@ export function Login({load, changeLoad, LIU_data, show, handleClose, LIU, setLI
     const [toLogin, setToLogin] = useState(false);
     const [loginData, setLoginData] = useState(initLoginData);
     const [LIUData, setLIUData] = useState({});
-    const [loggedIn, setLoggedIn] = useState(false);
+    //const [loggedIn, setLoggedIn] = useState(false);
     useEffect(() => {
         if (LIU) {
         axios.get("http://localhost:3001/LIU")
             .then((res) => {
-                console.log(res.data);
+                //console.log(res.data);
                 if (res.data.length === 0) {
                     console.log("not logged in");
                 } else {
                     setLIUData(...res.data);
-                    console.log("logged in");
+                    //console.log("logged in");
                 }
             })
             .catch((err) => {
@@ -126,7 +126,7 @@ export function Login({load, changeLoad, LIU_data, show, handleClose, LIU, setLI
         setNewForm({ ...newForm, [name]: value });
         console.log(newForm);
     }
-    console.log(LIU_data);
+    //console.log(LIU_data);
     const handleFormSubmit = (e) => {
         e.preventDefault();
         const LIU_email = LIUData.email;
@@ -176,10 +176,10 @@ export function Login({load, changeLoad, LIU_data, show, handleClose, LIU, setLI
             })
     }
     const { firstName, lastName, phone, email, password } = data;
-    return !LIU? (<div id="myModal" class={styles.modal} style={show ? { display: "block" } : { display: "none" }}>
+    return !LIU? (<div id="myModal" className={styles.modal} style={show ? { display: "block" } : { display: "none" }}>
 
-            {!toLogin ? <div class={styles.modalContent}>
-                <span onClick={() => handleClose()} class={styles.close}>&times;</span>
+            {!toLogin ? <div className={styles.modalContent}>
+                <span onClick={() => handleClose()} className={styles.close}>&times;</span>
                 <div className={styles.loginDiv}>
                     <h3>Start your Fundraiser</h3>
                     <form onSubmit={handleSubmit}>
@@ -197,8 +197,8 @@ export function Login({load, changeLoad, LIU_data, show, handleClose, LIU, setLI
                     </div>
                 
                 </div>
-            </div> : <div class={styles.modalContent}>
-                <span onClick={() => handleClose()} class={styles.close}>&times;</span>
+            </div> : <div className={styles.modalContent}>
+                <span onClick={() => handleClose()} className={styles.close}>&times;</span>
                 <div className={styles.loginDiv}>
                     <h3>Login</h3>
                     <form onSubmit={handleLoginSubmit}>
@@ -213,10 +213,10 @@ export function Login({load, changeLoad, LIU_data, show, handleClose, LIU, setLI
                     </div>
                 </div>
             </div>}
-    </div>) : (<div id="myModal" class={styles.modal} style={show ? { display: "block" } : { display: "none" }}>
+    </div>) : (<div id="myModal" className={styles.modal} style={show ? { display: "block" } : { display: "none" }}>
 
-            <div class={styles.modalContent1}>
-                <span onClick={() => handleClose()} class={styles.close}>&times;</span>
+            <div className={styles.modalContent1}>
+                <span onClick={() => handleClose()} className={styles.close}>&times;</span>
                 <div className={styles.frDiv}>
                     <h3>Tell us more about your Fundraiser</h3>
                     <form onSubmit={handleFormSubmit}>
@@ -233,8 +233,6 @@ export function Login({load, changeLoad, LIU_data, show, handleClose, LIU, setLI
             </div>
     </div>)
 }
-
-
 
 
 
