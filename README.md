@@ -21,3 +21,10 @@ The core functionalities of this project:
 4) Donation Page: Every fundraiser has a donation page depicting the amount of money needed, the number of days by which the money is needed, along with all the other details of the fundraiser.
 5) Any user can donate any amount of money to any fundraiser that is present. After donation, the amount is added to the already raised amount of money.
 6) The name of the user who has donated along with the amount donated can be seen in the 'supporters' section. The top 10 donors can be seen in the 'Top Donors' section.
+
+All the required data is stored in the db.json file. 
+Kindly run the following commands to run the project after cloning:
+
+1) cd bedonor-clone
+2) json-server db.json --port 3001 --watch (In split terminal, to start the json server)
+3) npm start
