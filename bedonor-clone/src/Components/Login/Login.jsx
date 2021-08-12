@@ -90,7 +90,7 @@ export function Login({show, handleClose, LIU, setLIU }) {
                     axios(LIU_details)
                         .then((res) => {
                             setLIU(true);
-                            console.log("Logged in Successfully");
+                            //console.log("Logged in Successfully");
                         })
                         .catch((err) => {
                             alert(err);
@@ -124,13 +124,13 @@ export function Login({show, handleClose, LIU, setLIU }) {
     const handleForm = (e) => {
         const { name, value } = e.target;
         setNewForm({ ...newForm, [name]: value });
-        console.log(newForm);
+        //console.log(newForm);
     }
     //console.log(LIU_data);
     const handleFormSubmit = (e) => {
         e.preventDefault();
         const LIU_email = LIUData.email;
-        console.log(LIU_email);
+        //console.log(LIU_email);
         let currentLIUName;
         axios.get('http://localhost:3001/users')
             .then((res) => {
@@ -150,7 +150,7 @@ export function Login({show, handleClose, LIU, setLIU }) {
                             ailment: newForm.ailment,
                             donors: [],
                         }
-                        console.log(updatedFormDetails);
+                        //console.log(updatedFormDetails);
                         const config = {
                             method: "post",
                             data: updatedFormDetails,
