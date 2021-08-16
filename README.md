@@ -32,20 +32,19 @@ All the required data is stored in the db.json file.
 
 ## Landing Page 
 
-![Screenshot (1681)](https://user-images.githubusercontent.com/82999654/129581343-25f4fa66-4527-4d50-8f1b-8a48ade4bb7e.png)
+![Screenshot (1691)](https://user-images.githubusercontent.com/82999654/129583661-165cd34d-51c6-461d-80fc-1a97b1766660.png)
 
-## Login Page
+## Login Page 
 
-![Screenshot (1690)](https://user-images.githubusercontent.com/82999654/129581498-04cbbebf-b029-4c12-82c7-893e37158e9d.png)
+![Screenshot (1692)](https://user-images.githubusercontent.com/82999654/129583697-7d8b0b3a-0a27-4c19-92a5-dcafe66411a2.png)
 
 ## Fundraiser Page
-![Screenshot (1685)](https://user-images.githubusercontent.com/82999654/129581811-da4fd71e-c95e-45f3-851b-16c6f2805dc4.png)
 
-![Screenshot (1684)](https://user-images.githubusercontent.com/82999654/129581789-d8e0d25f-1be1-4e3b-a3d2-bf99a285d90e.png)
+![Screenshot (1693)](https://user-images.githubusercontent.com/82999654/129583822-3e31bd26-968f-40b3-8862-1aa90119954b.png)
+![Screenshot (1694)](https://user-images.githubusercontent.com/82999654/129583840-ed79216b-b311-4e10-96d6-3c6653a26f3a.png)
 
 ## Donation Page
 
-![Screenshot (1688)](https://user-images.githubusercontent.com/82999654/129581965-784b88c2-517b-47d0-bec8-aff25670f810.png)
-![Screenshot (1686)](https://user-images.githubusercontent.com/82999654/129581988-599a1d80-4385-49d6-861e-0c870489ec01.png)
-![Screenshot (1689)](https://user-images.githubusercontent.com/82999654/129581970-e7a7605b-64f6-4ca5-b001-6cf623cc42a7.png)
-![Screenshot (1687)](https://user-images.githubusercontent.com/82999654/129581951-f70e8b26-b636-4f98-9576-4ca005a05ff4.png)
+![Screenshot (1695)](https://user-images.githubusercontent.com/82999654/129583917-28b369b9-3246-4e86-9af7-a03c3b93848f.png)
+![Screenshot (1696)](https://user-images.githubusercontent.com/82999654/129583943-10154f50-3954-452d-a397-7dba4ced8f1a.png)
+![Screenshot (1697)](https://user-images.githubusercontent.com/82999654/129583953-bd109076-a60e-41bb-b563-a99b2157ec7d.png)
