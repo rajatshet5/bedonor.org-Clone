@@ -4,12 +4,14 @@
 This is a clone of bedonor.org, which is a crowdfunding platform where users can raise funds for a social cause or a medical emergency.
 This has been implemented using ReactJS. 
 
+## Demo
+https://bedonor.vercel.app/
+
 ## Installing and Running
 Kindly run the following commands to run the project after cloning:
 
 1) cd bedonor-clone
-2) json-server db.json --port 3001 --watch (In split terminal, to start the json server)
-3) npm start
+2) npm start
 
 ## Other Libraries used:
 The other libraries that we used: 
