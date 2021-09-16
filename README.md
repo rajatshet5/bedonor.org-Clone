@@ -29,9 +29,7 @@ The other libraries that we used:
 4) Donation Page: Every fundraiser has a donation page depicting the amount of money needed, the number of days by which the money is needed, along with all the other details of the fundraiser.
 5) Any user can donate any amount of money to any fundraiser that is present. After donation, the amount is added to the already raised amount of money.
 6) The name of the user who has donated along with the amount donated can be seen in the 'supporters' section. The top 10 donors can be seen in the 'Top Donors' section.
-
-All the required data is stored in the db.json file. 
-
+7) 
 ## Landing Page 
 
 ![Screenshot (1691)](https://user-images.githubusercontent.com/82999654/129583661-165cd34d-51c6-461d-80fc-1a97b1766660.png)
