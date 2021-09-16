@@ -33,7 +33,7 @@ export function Donate({ caseData, showDonate, handleClose }) {
         const config = {
             method: "patch",
             data: { ...caseData },
-            url: `https://h-server-app.herokuapp.com/${caseData.id}`,
+            url: `https://h-server-app.herokuapp.com/data/${caseData.id}`,
         };
         axios(config)
             .then((res) => {
