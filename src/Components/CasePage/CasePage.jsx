@@ -22,7 +22,7 @@ export function CasePage() {
     }, []);
 
     const getAgain = () => {
-        axios.get(`http://localhost:3001/data/${id}`)
+        axios.get(`https://h-server-app.herokuapp.com/${id}`)
             .then((res) => {
                 setNewAllData(res.data);
         })

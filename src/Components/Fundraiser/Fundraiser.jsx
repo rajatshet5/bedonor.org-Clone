@@ -12,7 +12,7 @@ export function Fundraiser({ load }) {
     //console.log(allData);
 
     const getData = () => {
-        axios.get(`http://localhost:3001/data?_page=${page}&_limit=4`)
+        axios.get(`https://h-server-app.herokuapp.com/data?_page=${page}&_limit=4`)
             .then((res) => {
                 setAllData(res.data);
             })

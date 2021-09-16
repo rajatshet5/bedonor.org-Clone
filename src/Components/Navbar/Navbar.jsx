@@ -6,7 +6,7 @@ import axios from 'axios';
 
 export function Navbar({tempo, load, changeLoad, altShow, altShowFn }) {
     const check = () => {
-        axios.get("http://localhost:3001/LIU")
+        axios.get("https://h-server-app.herokuapp.com/LIU")
             .then((res) => {
                 //console.log(res.data);
                 if (res.data.length === 0) {
@@ -57,7 +57,7 @@ export function Navbar({tempo, load, changeLoad, altShow, altShowFn }) {
     const handleLogout = () => {
         const config = {
             method: "delete",
-            url: `http://localhost:3001/LIU/1`,
+            url: `https://h-server-app.herokuapp.com/LIU/1`,
         };
         axios(config)
             .then((res) => {

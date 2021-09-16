@@ -30,7 +30,7 @@ export function Login({show, handleClose, LIU, setLIU }) {
     //const [loggedIn, setLoggedIn] = useState(false);
     useEffect(() => {
         if (LIU) {
-        axios.get("http://localhost:3001/LIU")
+        axios.get("https://h-server-app.herokuapp.com/LIU")
             .then((res) => {
                 //console.log(res.data);
                 if (res.data.length === 0) {
@@ -59,7 +59,7 @@ export function Login({show, handleClose, LIU, setLIU }) {
         const details = {
             method: "post",
             data,
-            url: "http://localhost:3001/users",
+            url: "https://h-server-app.herokuapp.com/users",
         };
         axios(details)
             .then((res) => {
@@ -74,7 +74,7 @@ export function Login({show, handleClose, LIU, setLIU }) {
     }
     const handleLoginSubmit = (e) => {
         e.preventDefault();
-        axios.get("http://localhost:3001/users")
+        axios.get("https://h-server-app.herokuapp.com/users")
             .then((res) => {
                 let flag = false;
                 for(let dets of res.data) {
@@ -85,7 +85,7 @@ export function Login({show, handleClose, LIU, setLIU }) {
                             data: {
                                 email: loginData.email,
                             },
-                            url: "http://localhost:3001/LIU",
+                            url: "https://h-server-app.herokuapp.com/LIU",
                         };
                     axios(LIU_details)
                         .then((res) => {
@@ -132,7 +132,7 @@ export function Login({show, handleClose, LIU, setLIU }) {
         const LIU_email = LIUData.email;
         //console.log(LIU_email);
         let currentLIUName;
-        axios.get('http://localhost:3001/users')
+        axios.get('https://h-server-app.herokuapp.com/users')
             .then((res) => {
                 for (let item of res.data) {
                     if (LIU_email === item.email) {
@@ -154,7 +154,7 @@ export function Login({show, handleClose, LIU, setLIU }) {
                         const config = {
                             method: "post",
                             data: updatedFormDetails,
-                            url: "http://localhost:3001/data",
+                            url: "https://h-server-app.herokuapp.com/data",
                         };
                         axios(config)
                             .then((res) => {
