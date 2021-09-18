@@ -1,9 +1,9 @@
 # bedonor.org-Clone
 ## Clone of BeDonor
 
-First React app. Built in 5 days.
 This is a clone of bedonor.org, which is a crowdfunding platform where users can raise funds for a social cause or a medical emergency.
-This has been implemented using ReactJS. 
+This has been implemented using ReactJS.
+My first React app. Built in 5 days.
 
 ## Demo
 https://bedonor.vercel.app/
